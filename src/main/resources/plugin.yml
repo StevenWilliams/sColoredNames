@@ -1,0 +1,14 @@
+name: ${project.name}
+version: ${project.version}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+description: |
+    ${project.description}
+
+authors: [puppy3276]
+depend: [Vault]
+commands:
+   color:
+     description: Change your name color
+     aliases: [colour, col]
+     permission: names.color
+     usage: /<command> (player)

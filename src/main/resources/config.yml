@@ -1,0 +1,125 @@
+#default
+no-permission:
+    - 'Please purchase color at:'
+    - 'store.vestamc.net'
+#seconds - 1 day = 86400
+cooldown: 86400
+colors:
+    LIGHT_PURPLE:
+        permission: names.color.pink
+        name: '&dpink'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&dPink Name'
+              datavalue: 6
+              lore:
+                - 'Change your name color!'
+    GOLD:
+        permission: names.color.gold
+        nae: '&6gold'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&6Gold Name'
+              datavalue: 1
+              lore:
+                - 'Change your name color!'
+    BLUE:
+        permission: names.color.blue
+        name: '&9blue'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&9Blue Name'
+              datavalue: 11
+              lore:
+                - 'Change your name color!'
+    WHITE:
+        permission: names.color.white
+        name: '&fwhite'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&fWhite Name'
+              datavalue: 0
+              lore:
+                - 'Change your name color!'
+    GREEN:
+        permission: names.color.green
+        name: '&agreen'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&aGreen Name'
+              datavalue: 5
+              lore:
+                - 'Change your name color!'
+    DARK_GREEN:
+        permission: names.color.darkgreen
+        name: '&2dark green'
+        item:
+            WOOL:
+                quantity: 1
+                displayName: '&2Dark Green Name'
+                datavalue: 13
+                lore:
+                - 'Change your name color!'
+    DARK_AQUA:
+        permission: names.color.darkaqua
+        name: '&3dark aqua'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&3Dark Aqua Name'
+              datavalue: 9
+              lore:
+                - 'Change your name color!'
+    YELLOW:
+        permission: names.color.yellow
+        no-permission:
+          - 'This color is reserved for staff!'
+        name: '&eyellow'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&eYellow Name'
+              datavalue: 4
+              lore:
+                - 'Change your name color!'
+    AQUA:
+        permission: names.color.aqua
+        no-permission:
+          - 'This color is reserved for staff!'
+        name: '&baqua'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&bAqua Name'
+              datavalue: 3
+              lore:
+                - 'Change your name color!'
+    RED:
+        permission: names.color.red
+        no-permission:
+          - 'This color is reserved for staff!'
+        name: '&cred'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&cRed Name'
+              datavalue: 14
+              lore:
+                - 'Change your name color!'
+    DARK_RED:
+        permission: names.color.darkred
+        no-permission:
+          - 'This color is reserved for staff!'
+        name: '&4dark red'
+        item:
+          WOOL:
+              quantity: 1
+              displayName: '&4Dark Red Name'
+              datavalue: 14
+              lore:
+                - 'Change your name color!'
