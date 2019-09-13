@@ -28,7 +28,8 @@ public class sColoredNames extends JavaPlugin {
         return this.getConfig().getLong("cooldown") * 1000;
     }
     public List<String> getNoPermissionMsg(String color) {
-        if(!this.getConfig().getStringList("colors." + color + ".no-permission").isEmpty()) {
+       // this.getLogger().info(color);
+        if(this.getConfig().contains("colors." + color + ".no-permission") || !this.getConfig().getStringList("colors." + color + ".no-permission").isEmpty()) {
             return this.getConfig().getStringList("colors." + color + ".no-permission");
         } else {
             return this.getConfig().getStringList("no-permission");

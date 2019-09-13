@@ -47,7 +47,7 @@ public class ColorItem extends MenuItem {
                 event.getPlayer().sendMessage(ChatColor.RED + "You can change your name color again in " + plugin.getDurationBreakdown(waitTime));
             }
         } else {
-             List<String> noPermissionMsg = plugin.getNoPermissionMsg(color.toString());
+             List<String> noPermissionMsg = plugin.getNoPermissionMsg(color.name());
              for(String permLine : noPermissionMsg)
              {
                  event.getPlayer().sendMessage(ChatColor.RED + permLine);
@@ -62,7 +62,10 @@ public class ColorItem extends MenuItem {
         ItemStack finalIcon = super.getFinalIcon(player);
         if (!player.hasPermission(permission)) {
             ItemMeta meta = finalIcon.getItemMeta();
-            List<String> lore = plugin.getNoPermissionMsg(color.toString());
+            //plugin.getLogger().info("icon1" + color.toString());
+            //plugin.getLogger().info("icon2" + color.name());
+
+            List<String> lore = plugin.getNoPermissionMsg(color.name());
             meta.setLore(lore);
             finalIcon.setItemMeta(meta);
         }

@@ -11,35 +11,44 @@
     <packaging>jar</packaging>
 
     <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.theyeticave.net/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>greatman-repo</id>
-            <url>http://repo.greatmancode.com/content/groups/public/</url>
-        </repository>
-    </repositories>
+    <repository>
+        <id>spigot-repo</id>
+        <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+    </repository>
+
+    <!--Spigot-API-->
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+    <repository>
+        <id>sk89q-repo</id>
+        <url>http://maven.sk89q.com/repo/</url>
+    </repository>
+
+    <repository>
+        <id>vault-repo</id>
+        <url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
+    </repository>
+</repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <version>1.13-R0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>VaultAPI</artifactId>
-            <version>1.5</version>
+            <version>1.7</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>ninja.amp</groupId>
-            <artifactId>ampmenus</artifactId>
-            <version>1.4-SNAPSHOT</version>
+            <groupId>com.github.StevenWilliams</groupId>
+            <artifactId>ampMenusX</artifactId>
+            <version>8839de18e3</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -71,19 +80,20 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>ninja.amp:ampmenus</include>
+                                    <include>com.github.StevenWilliams:ampMenusX</include>
                                 </includes>
                             </artifactSet>
                             <relocations>
                                 <relocation>
                                     <pattern>ninja.amp</pattern>
-                                    <shadedPattern>org.stevenw.ninja.amp</shadedPattern>
+                                    <shadedPattern>org.stevenw.colors.ninja.amp</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
         <resources>
             <resource>
